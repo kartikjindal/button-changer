@@ -12,7 +12,10 @@ btn[0].addEventListener('click',() => {
     const str = func();
     console.log(str);
     document.body.style.backgroundColor= str;
-    console.log(document.body.children[0].children[0])
+    let f=(str)=>{ 
+        return `<span>current colour is ${str}</span>`;
+    }
+    console.log(document.body.children[0].children[0].innerHTML=f(str));
 });
 
 // btn[0].innerHTML=`<div> hi </div>`
